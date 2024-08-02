@@ -63,7 +63,12 @@
 		};
 	};
 };
-
+// Overclock CPU frequency to 1.6GHz
+&cpu_opp_table {
+	opp-1608000000 {
+		opp-supported-hw = <0x3>;
+	};
+};
 &tlmm {
 	gpio-reserved-ranges = <20 1>;
 
